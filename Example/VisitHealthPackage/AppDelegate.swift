@@ -2,20 +2,26 @@
 //  AppDelegate.swift
 //  VisitHealthPackage
 //
-//  Created by 81799742 on 05/23/2024.
-//  Copyright (c) 2024 81799742. All rights reserved.
+//  Created by 81799742 on 01/24/2022.
+//  Copyright (c) 2022 81799742. All rights reserved.
 //
 
 import UIKit
+import VisitHealthPackage
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    let visitHealthView = VisitIosHealthController.init();
     var window: UIWindow?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        return true
+    }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        NotificationCenter.default.post(name: Notification.Name("VisitSDK"), object: nil, userInfo: ["deepLink":url])
         return true
     }
 
@@ -40,7 +46,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
+    
+    static func shared() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
 
 }
 

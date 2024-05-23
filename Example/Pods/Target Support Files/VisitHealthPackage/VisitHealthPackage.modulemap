@@ -1,0 +1,6 @@
+framework module VisitHealthPackage {
+  umbrella header "VisitHealthPackage-umbrella.h"
+
+  export *
+  module * { export * }
+}

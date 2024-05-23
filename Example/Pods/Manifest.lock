@@ -1,0 +1,16 @@
+PODS:
+  - VisitHealthPackage (0.1.0)
+
+DEPENDENCIES:
+  - VisitHealthPackage (from `../`)
+
+EXTERNAL SOURCES:
+  VisitHealthPackage:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  VisitHealthPackage: e58499a62957d655029bc4db7ac84b61fba9d9c2
+
+PODFILE CHECKSUM: a01eb13c9e1644c816def17917a157e8cfcb8720
+
+COCOAPODS: 1.15.2

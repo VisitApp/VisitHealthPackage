@@ -1,0 +1,6 @@
+framework module Pods_VisitHealthPackage_Example {
+  umbrella header "Pods-VisitHealthPackage_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

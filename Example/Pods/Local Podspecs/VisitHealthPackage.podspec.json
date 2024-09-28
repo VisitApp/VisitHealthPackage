@@ -1,9 +1,10 @@
 {
   "name": "VisitHealthPackage",
-  "version": "0.1.0",
-  "summary": "A short description of VisitHealthPackage.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/81799742/VisitHealthPackage",
+  "version": "0.0.2",
+  "summary": "An SDK to inject the health kit data in Visit PWA",
+  "swift_versions": "4.0",
+  "description": "An iOS SDK to inject the health kit data in Visit PWA",
+  "homepage": "https://github.com/VisitApp/VisitHealthPackage.git",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +13,31 @@
     "81799742": "yash.vardhan@getvisitapp.com"
   },
   "source": {
-    "git": "https://github.com/81799742/VisitHealthPackage.git",
-    "tag": "0.1.0"
+    "git": "https://github.com/VisitApp/VisitHealthPackage.git",
+    "tag": "0.0.2"
   },
   "platforms": {
-    "ios": "10.0"
+    "ios": "12.0"
   },
-  "source_files": "VisitHealthPackage/Classes/**/*"
+  "source_files": "VisitHealthPackage/Classes/**/*.{swift,h,m}",
+  "dependencies": {
+    "TwilioVideo": [
+      "~> 5.5.0"
+    ]
+  },
+  "public_header_files": "VisitHealthPackage/Classes/**/*.h",
+  "resource_bundles": {
+    "VisitHealthPackage": [
+      "VisitHealthPackage/Assets/*.png",
+      "VisitHealthPackage/Assets/*.storyboard",
+      "VisitHealthPackage/Assets/*.xib"
+    ]
+  },
+  "pod_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "user_target_xcconfig": {
+    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+  },
+  "swift_version": "4.0"
 }

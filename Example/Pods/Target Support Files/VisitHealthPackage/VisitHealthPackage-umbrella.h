@@ -10,6 +10,9 @@
 #endif
 #endif
 
+#import "ExternalViewController.h"
+#import "VisitIosHealthController.h"
+#import "VisitVideoCallDelegate.h"
 
 FOUNDATION_EXPORT double VisitHealthPackageVersionNumber;
 FOUNDATION_EXPORT const unsigned char VisitHealthPackageVersionString[];

@@ -1,16 +1,23 @@
 PODS:
-  - VisitHealthPackage (0.1.0)
+  - TwilioVideo (5.5.0)
+  - VisitHealthPackage (0.0.2):
+    - TwilioVideo (~> 5.5.0)
 
 DEPENDENCIES:
   - VisitHealthPackage (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - TwilioVideo
 
 EXTERNAL SOURCES:
   VisitHealthPackage:
     :path: "../"
 
 SPEC CHECKSUMS:
-  VisitHealthPackage: e58499a62957d655029bc4db7ac84b61fba9d9c2
+  TwilioVideo: 4da3eb08eb3a318584c48de58a2cf144c02dc5fd
+  VisitHealthPackage: ca7052d28bff702594dd5c6d3369e24590c19a7b
 
-PODFILE CHECKSUM: a01eb13c9e1644c816def17917a157e8cfcb8720
+PODFILE CHECKSUM: b1e6d5f1a7e128dd461068cddddab8e3413bd888
 
 COCOAPODS: 1.15.2

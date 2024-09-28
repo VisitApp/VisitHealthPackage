@@ -160,7 +160,7 @@ class ViewController: VisitVideoCallDelegate {
         self.view.addSubview(visitHealthView)
         visitHealthView.translatesAutoresizingMaskIntoConstraints = false
         
-        visitHealthView.loadVisitWebUrl("https://www.google.com/")
+        visitHealthView.loadVisitWebUrl("https://tata-aig.getvisitapp.com/sso?userParams=XsOIXYsDhmOiQpvGWzKerumQP_5AIWLHz5y6VOB22tO2eiPMsKCDvXB1hR9YG8WteES1e51ztX7xjtCjyiW4bnWXI4wn3g1wPJJKOLXyz2IALAp51GOrhRtVQG4MzsBNMSmimkeiwB3xtn_GrIR9j1ePrEKx4uy5qh9zhvitdOlCV4EBGUqWgcYRYf4JXYQjY0W93OumqVtUSjeiaIvJOttxfMju6nCvPA8hjZOo8NeE0gNV2x84eukW3Sz9-GXKf7Y89VcLfBi8G51WMKLx5-QyLHyDZERfEM_zHyMFYPsvvgekc6iAV_0V_v7dEk-v&clientId=tata-aig-a8b455")
 
         // subview implementation
         let views = ["view" : visitHealthView]

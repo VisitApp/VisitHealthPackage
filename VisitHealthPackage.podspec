@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VisitHealthPackage'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'An SDK to inject the health kit data in Visit PWA'
   s.swift_versions   = '4.0'
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/VisitApp/VisitHealthPackage.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '12.2'
 
   s.source_files = 'VisitHealthPackage/Classes/**/*.{swift,h,m}'
   s.dependency 'TwilioVideo', '~> 5.5.0'

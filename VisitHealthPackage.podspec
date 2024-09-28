@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'VisitHealthPackage'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'An SDK to inject the health kit data in Visit PWA'
   s.swift_versions   = '4.0'
 
@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '12.0'
 
   s.source_files = 'VisitHealthPackage/Classes/**/*.{swift,h,m}'
-  s.dependency 'TwilioVideo', '~> 4.4'
+  s.dependency 'TwilioVideo', '~> 5.5.0'
   s.public_header_files = 'VisitHealthPackage/Classes/**/*.h'
 
   s.resource_bundles = {
